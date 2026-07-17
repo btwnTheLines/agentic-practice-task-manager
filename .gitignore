@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Environment Variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Python Type Checking
+.mypy_cache/
+
+# Docker
+*.pid
+
+# PostgreSQL
+postgres_data/
+
+# Node (future-proof)
+node_modules/
+
+# Build Files
+dist/
+build/
+
+# Temporary
+*.tmp
+*.bak
