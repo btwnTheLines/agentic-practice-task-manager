@@ -1,0 +1,23 @@
+# Default
+* text=auto
+
+# Shell scripts must stay LF
+*.sh text eol=lf
+
+# Windows scripts
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Python
+*.py text eol=lf
+
+# YAML
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Docker
+Dockerfile text eol=lf
+
+# Markdown
+*.md text eol=lf

@@ -1,3 +1,13 @@
+For every milestone:
+
+1. Confirm the goal.
+
+2. Define clear acceptance criteria.
+
+3. Produce an implementation plan.
+
+4. Wait for approval unless instructed otherwise.
+
 Before implementing any feature:
 
 1. Read all relevant project documentation.

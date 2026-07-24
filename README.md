@@ -1,118 +1,70 @@
 # Task Management System
 
-## Purpose
+## Overview
 
-This repository has two goals:
+This repository is used to build a production-quality Task Management System while developing a reusable AI-first software engineering workflow.
 
-1. Build a production-quality task management system.
-2. Develop a reusable AI-first software engineering workflow.
-
-The workflow, automation and project standards will evolve together with the application.
+The primary objective is to learn professional Agentic Development by building, testing and deploying a real application from scratch.
 
 ---
 
-## Current Status
-
-Project Foundation
-
----
-
-## Tech Stack
+## Technology Stack
 
 ### Backend
 
-- Django
+* Django
 
 ### Frontend
 
-- HTML
-- Tailwind CSS
-- JavaScript
+* HTML
+* Tailwind CSS
+* JavaScript
 
 ### Database
 
-- PostgreSQL
+* PostgreSQL
 
 ### Testing
 
-- Pytest
+* Pytest
 
 ### Containers
 
-- Docker
-- Docker Compose
+* Docker
+* Docker Compose
 
 ### Continuous Integration
 
-- GitHub Actions
+* GitHub Actions
 
 ### AI Development
 
-- Claude Code
-- Ollama
-
----
-
-## Project Goals
-
-- Learn Agentic Development
-- Learn Django
-- Learn PostgreSQL
-- Learn Docker
-- Learn GitHub Actions
-- Build reusable AI workflows
-- Produce production-quality software
+* Cline
+* Ollama
+* Claude Code (optional)
 
 ---
 
 ## Repository Structure
 
+```text
 backend/
-
 frontend/
-
-tests/
-
-docs/
-
 docker/
-
-.github/workflows/
-
+docs/
+tests/
+.github/
 .ai/
+```
 
 ---
 
-## AI Workflow
+## Getting Started
 
-Claude Code should:
-
-- Read project documentation.
-- Produce an implementation plan.
-- Wait for approval unless instructed otherwise.
-- Implement the feature.
-- Write tests.
-- Run local tests.
-- Fix failures.
-- Update documentation when appropriate.
+Project setup instructions will be added as the engineering workflow is developed.
 
 ---
 
-## Development Philosophy
+## Project Status
 
-This repository is intentionally developed incrementally.
-
-We only introduce new tools, documentation and automation when they solve a real engineering problem.
-
-Every file should have a reason to exist.
-
----
-
-## Future Roadmap
-
-- Docker
-- GitHub Actions
-- CI/CD
-- Deployment
-- Monitoring
-- AI Engineering OS
+🚧 Project Foundation
