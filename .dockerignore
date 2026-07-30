@@ -1,0 +1,11 @@
+.git
+.gitattributes
+.gitignore
+*.md
+.env
+.env.example
+.github
+docs
+frontend
+tests
+project.md
