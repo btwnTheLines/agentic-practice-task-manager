@@ -14,3 +14,10 @@ When executing commands:
 - Never assume Bash.
 - Never assume CMD.
 - If uncertain, ask instead of guessing.
+
+When proposing tests:
+
+- Prefer tests that validate behaviour over implementation.
+- Prefer integration tests over configuration checks when both provide similar confidence.
+- Avoid tests that merely verify framework defaults.
+- Every test should reduce project risk.
