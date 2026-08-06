@@ -16,22 +16,26 @@ class TestTasksAppWiring:
         """
         Given the tasks app is registered in INSTALLED_APPS
         And tasks/urls.py is included in the root URL configuration
-        When a request matches the /tasks/ prefix
-        Then Django should route to the tasks URLconf
-        (a Resolver404 is expected because no endpoints exist yet,
-        but an ImproperlyConfigured error would indicate miswiring).
+        When a request matches the /tasks/ root URL
+        Then Django should route to the tasks URLconf and resolve the
+        task list view, proving the namespace is correctly wired.
         """
         try:
-            resolve("/tasks/")
+            match = resolve("/tasks/")
         except Resolver404:
-            # Expected: tasks URLconf exists but has empty urlpatterns.
-            # This proves the namespace was found and delegated to.
-            pass
+            pytest.fail(
+                "tasks URLconf is not properly wired — "
+                "Django could not resolve the /tasks/ URL"
+            )
         except ImproperlyConfigured:
             pytest.fail(
                 "tasks URLconf is not properly wired — "
                 "Django could not resolve the tasks URL module"
             )
+
+        assert match.view_name == "tasks:task_list", (
+            f"Expected tasks:task_list, got {match.view_name}"
+        )
 
     def test_tasks_app_is_registered(self):
         """
